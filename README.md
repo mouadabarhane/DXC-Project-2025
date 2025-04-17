@@ -9,17 +9,16 @@ Welcome to the **Order Management Tool (OMT)** developed as part of the **DXC PF
 
 ## 🌐 Technologies Used
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]  
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-* [![ServiceNow][ServiceNow.com]][ServiceNow-url]
-* [![Docker][Docker.com]][Docker-url]
-* [![Express.js][Express.js]][Express-url]
-* [![Node.js][Node.js]][Node-url]
-* [![TypeScript][TypeScript-lang]][TypeScript-url]
-* [![Tailwind CSS][TailwindCSS.com]][Tailwind-url]
-
+* [![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+* [![React](https://img.shields.io/badge/React-blue?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+* [![Bootstrap](https://img.shields.io/badge/Bootstrap-purple?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+* [![jQuery](https://img.shields.io/badge/jQuery-lightblue?style=for-the-badge&logo=jquery&logoColor=white)](https://jquery.com/)
+* [![ServiceNow](https://img.shields.io/badge/ServiceNow-green?style=for-the-badge&logo=servicenow&logoColor=white)](https://www.servicenow.com/)
+* [![Docker](https://img.shields.io/badge/Docker-blue?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+* [![Express.js](https://img.shields.io/badge/Express.js-grey?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+* [![Node.js](https://img.shields.io/badge/Node.js-darkgreen?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+* [![TypeScript](https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+* [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-teal?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
 ---
 
@@ -52,6 +51,7 @@ npm run dev
 
 ### Make sure to add a .env file inside the server/ folder with the following variables:
 
+```sh
 DATABASE_URL=
 JWTPRIVATEKEY=
 SALT_KEY=10
@@ -59,14 +59,16 @@ PORT=
 INSTANCE_URL=
 SERVICENOW_USERNAME=
 SERVICENOW_PASSWORD=
-
+```
 
 
 ### Add a .env file in the client/ folder with these variables:
 
+```sh
 DATABASE_URL=
 NEXT_PUBLIC_INSTANCE_URL= 
 NEXT_PUBLIC_AXIOS_URL=
+```
 
 ---
 
