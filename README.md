@@ -35,7 +35,7 @@ Go to the `server` folder and run the following commands:
 
 ```sh
 npm i
-npm run server
+npm run dev
 ```
 
 ---
@@ -47,7 +47,7 @@ Go to the `server` folder and run the following commands:
 
 ```sh
 npm i
-npm run dev
+npm run start
 ```
 
 ---
