@@ -1,16 +1,25 @@
+<a id="readme-top"></a>
+
+
 # 📦 DXC Project 2025 – OMT Order Management System
 
-Welcome to the **Order Management Tool (OMT)** developed as part of the **DXC PFE 2025 Internship Program**. This web application provides an end-to-end solution for managing telecom product specifications, offerings, and customer orders. It integrates a **React.js front-end** with a **ServiceNow back-end**, enabling seamless synchronization and efficient workflow automation.
+Welcome to the **Order Management Tool (OMT)** developed as part of the **DXC PFE 2025 Internship Program**. This web application provides an end-to-end solution for managing telecom product specifications, offerings, and customer orders. It integrates a **Next.js front-end** with a **ServiceNow back-end**, enabling seamless synchronization and efficient workflow automation.
 
 ---
 
 ## 🌐 Technologies Used
 
-- **Front-end**: React.js, Next.js
-- **Back-end**: Node.js, Express.js, MongoDB
-- **Platform Integration**: ServiceNow API
-- **Authentication**: JWT-based secure login system
-- **Dev Tools**: Git, Postman, VS Code
+* [![Next][Next.js]][Next-url]
+* [![React][React.js]][React-url]  
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![JQuery][JQuery.com]][JQuery-url]
+* [![ServiceNow][ServiceNow.com]][ServiceNow-url]
+* [![Docker][Docker.com]][Docker-url]
+* [![Express.js][Express.js]][Express-url]
+* [![Node.js][Node.js]][Node-url]
+* [![TypeScript][TypeScript-lang]][TypeScript-url]
+* [![Tailwind CSS][TailwindCSS.com]][Tailwind-url]
+
 
 ---
 
@@ -20,18 +29,24 @@ Welcome to the **Order Management Tool (OMT)** developed as part of the **DXC PF
 
 Go to the `server` folder and run the following commands:
 
-```bash
+```sh
 npm i
 npm run server
+```
+
+---
 
 
 ### 2. Start the Client
 
 Go to the `server` folder and run the following commands:
 
-```bash
+```sh
 npm i
 npm run dev
+```
+
+---
 
 ## Step 2:
 
@@ -53,21 +68,29 @@ DATABASE_URL=
 NEXT_PUBLIC_INSTANCE_URL= 
 NEXT_PUBLIC_AXIOS_URL=
 
+---
+
 ## Step 3:
 
 ### Send a POST request to:
+```sh
 http://localhost:{your-port}/api/users
+```
 
 ###  Sample JSON:
+```sh
 {
   "userID": "yourname",
   "password": "yourpassword",
-  "profile": "Administrator",
+  "profile": "yourprofile",
   "username": "yourusername",
   "role": "yourrole"
 }
-
+```
 ✅ Valid profiles: "Administrator", "Product Offering Manager", "Commercial Agent"
+---
+
+
 
 
 
