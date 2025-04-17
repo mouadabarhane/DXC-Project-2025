@@ -1,0 +1,333 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+type CustomerOrdersChannel {
+  id   String
+  name String
+}
+
+type CustomerOrdersProductOrderItem {
+  type                         String                                                       @map("@type")
+  action                       String
+  id                           String
+  itemPrice                    CustomerOrdersProductOrderItemItemPrice[]
+  ponr                         String
+  product                      CustomerOrdersProductOrderItemProduct
+  productOffering              CustomerOrdersProductOrderItemProductOffering
+  productOrderItemRelationship CustomerOrdersProductOrderItemProductOrderItemRelationship[]
+  quantity                     Int
+  state                        String
+  version                      String
+}
+
+type CustomerOrdersProductOrderItemItemPrice {
+  price     CustomerOrdersProductOrderItemItemPricePrice
+  priceType String
+}
+
+type CustomerOrdersProductOrderItemItemPricePrice {
+  taxIncludedAmount CustomerOrdersProductOrderItemItemPricePriceTaxIncludedAmount
+}
+
+type CustomerOrdersProductOrderItemItemPricePriceTaxIncludedAmount {
+  unit  String
+  /// Multiple data types found: Float: 8.3%, Int: 91.7% out of 24 sampled entries
+  value Json
+}
+
+type CustomerOrdersProductOrderItemProduct {
+  type                  String                                                       @map("@type")
+  id                    String?
+  place                 CustomerOrdersProductOrderItemProductPlace?
+  productCharacteristic CustomerOrdersProductOrderItemProductProductCharacteristic[]
+  productRelationship   CustomerOrdersProductOrderItemProductProductRelationship[]
+  productSpecification  CustomerOrdersProductOrderItemProductProductSpecification
+  relatedParty          CustomerOrdersProductOrderItemProductRelatedParty[]
+}
+
+type CustomerOrdersProductOrderItemProductOffering {
+  id              String
+  internalId      String
+  internalVersion String
+  name            String
+  version         String
+}
+
+type CustomerOrdersProductOrderItemProductOrderItemRelationship {
+  id               String
+  relationshipType String
+}
+
+type CustomerOrdersProductOrderItemProductPlace {
+  type String @map("@type")
+  id   String
+}
+
+type CustomerOrdersProductOrderItemProductProductCharacteristic {
+  name          String
+  previousValue String
+  value         String
+  valueType     String
+}
+
+type CustomerOrdersProductOrderItemProductProductRelationship {
+  id               String
+  relationshipType String
+}
+
+type CustomerOrdersProductOrderItemProductProductSpecification {
+  type            String @map("@type")
+  id              String
+  internalId      String
+  internalVersion String
+  name            String
+  version         String
+}
+
+type CustomerOrdersProductOrderItemProductRelatedParty {
+  referredType String @map("@referredType")
+  type         String @map("@type")
+  email        String
+  firstName    String
+  id           String
+  lastName     String
+  phone        String
+}
+
+type CustomerOrdersRelatedParty {
+  referredType String @map("@referredType")
+  type         String @map("@type")
+  id           String
+  name         String
+}
+
+type CustomerOrdersServiceOrderItem {
+  type     String                                @map("@type")
+  action   String
+  id       String
+  place    CustomerOrdersServiceOrderItemPlace?
+  ponr     String
+  quantity Int?
+  service  CustomerOrdersServiceOrderItemService
+  state    String
+  version  String
+}
+
+type CustomerOrdersServiceOrderItemPlace {
+  type String @map("@type")
+  id   String
+}
+
+type CustomerOrdersServiceOrderItemService {
+  type                  String                                                       @map("@type")
+  serviceCharacteristic CustomerOrdersServiceOrderItemServiceServiceCharacteristic[]
+  serviceSpecification  CustomerOrdersServiceOrderItemServiceServiceSpecification
+  serviceType           String
+  state                 String
+}
+
+type CustomerOrdersServiceOrderItemServiceServiceCharacteristic {
+  name          String
+  previousValue String
+  value         String
+  valueType     String
+}
+
+type CustomerOrdersServiceOrderItemServiceServiceSpecification {
+  type            String @map("@type")
+  id              String
+  internalId      String
+  internalVersion String
+  name            String
+  version         String
+}
+
+type ProductOfferingsCategory {
+  id   String
+  name String
+}
+
+type ProductOfferingsChannel {
+  id   String
+  name String
+}
+
+type ProductOfferingsProdSpecCharValueUse {
+  description                    String
+  name                           String
+  productSpecCharacteristicValue ProductOfferingsProdSpecCharValueUseProductSpecCharacteristicValue[]
+  productSpecification           ProductOfferingsProdSpecCharValueUseProductSpecification
+  validFor                       ProductOfferingsProdSpecCharValueUseValidFor
+  valueType                      String
+}
+
+type ProductOfferingsProdSpecCharValueUseProductSpecCharacteristicValue {
+  validFor ProductOfferingsProdSpecCharValueUseProductSpecCharacteristicValueValidFor
+  value    String
+}
+
+type ProductOfferingsProdSpecCharValueUseProductSpecCharacteristicValueValidFor {
+  startDateTime String
+}
+
+type ProductOfferingsProdSpecCharValueUseProductSpecification {
+  id              String
+  internalId      String
+  internalVersion String
+  name            String
+  version         String
+}
+
+type ProductOfferingsProdSpecCharValueUseValidFor {
+  startDatetime String
+}
+
+type ProductOfferingsProductOfferingPrice {
+  price     ProductOfferingsProductOfferingPricePrice
+  priceType String
+}
+
+type ProductOfferingsProductOfferingPricePrice {
+  taxIncludedAmount ProductOfferingsProductOfferingPricePriceTaxIncludedAmount
+}
+
+type ProductOfferingsProductOfferingPricePriceTaxIncludedAmount {
+  unit  String
+  value Int
+}
+
+type ProductOfferingsProductSpecification {
+  id              String
+  internalId      String
+  internalVersion String
+  name            String
+  version         String
+}
+
+type ProductOfferingsValidFor {
+  endDateTime   String
+  startDateTime String
+}
+
+type ProductSpecificationsProductSpecCharacteristic {
+  description                    String
+  name                           String
+  productSpecCharacteristicValue ProductSpecificationsProductSpecCharacteristicProductSpecCharacteristicValue[]
+  validFor                       ProductSpecificationsProductSpecCharacteristicValidFor
+  valueType                      String
+}
+
+type ProductSpecificationsProductSpecCharacteristicProductSpecCharacteristicValue {
+  validFor ProductSpecificationsProductSpecCharacteristicProductSpecCharacteristicValueValidFor
+  value    String
+}
+
+type ProductSpecificationsProductSpecCharacteristicProductSpecCharacteristicValueValidFor {
+  startDateTime String
+}
+
+type ProductSpecificationsProductSpecCharacteristicValidFor {
+  startDatetime String
+}
+
+type ProductSpecificationsProductSpecificationRelationship {
+  id              String
+  internalId      String
+  internalVersion String
+  name            String
+  type            String
+  validFor        ProductSpecificationsProductSpecificationRelationshipValidFor
+  version         String
+}
+
+type ProductSpecificationsProductSpecificationRelationshipValidFor {
+  endDateTime   String
+  startDateTime String
+}
+
+type ProductSpecificationsResourceSpecification {
+  id              String
+  internalId      String
+  internalVersion String
+  name            String
+  version         String
+}
+
+type ProductSpecificationsServiceSpecification {
+  id              String
+  internalId      String
+  internalVersion String
+  name            String
+  version         String
+}
+
+type ProductSpecificationsValidFor {
+  endDateTime   String
+  startDateTime String
+}
+
+model customer_orders {
+  id                      String                           @id @default(auto()) @map("_id") @db.ObjectId
+  type                    String                           @map("@type")
+  channel                 CustomerOrdersChannel[]
+  completionDate          String
+  expectedCompletionDate  String?
+  href                    String?
+  id_                     String                           @map("id")
+  orderDate               String
+  ponr                    String
+  productOrderItem        CustomerOrdersProductOrderItem[]
+  relatedParty            CustomerOrdersRelatedParty[]
+  requestedCompletionDate String?
+  requestedStartDate      String?
+  serviceOrderItem        CustomerOrdersServiceOrderItem[]
+  state                   String
+  version                 String
+}
+
+model product_offerings {
+  id                   String                                 @id @default(auto()) @map("_id") @db.ObjectId
+  category             ProductOfferingsCategory
+  channel              ProductOfferingsChannel[]
+  description          String
+  id_                  String                                 @map("id")
+  internalId           String
+  internalVersion      String
+  lastUpdate           String
+  name                 String
+  prodSpecCharValueUse ProductOfferingsProdSpecCharValueUse[]
+  productOfferingPrice ProductOfferingsProductOfferingPrice[]
+  productOfferingTerm  String
+  productSpecification ProductOfferingsProductSpecification
+  status               String?
+  validFor             ProductOfferingsValidFor
+  version              String
+}
+
+model product_specifications {
+  id                               String                                                  @id @default(auto()) @map("_id") @db.ObjectId
+  description                      String
+  id_                              String                                                  @map("id")
+  internalId                       String
+  internalVersion                  String
+  lastUpdate                       String
+  name                             String
+  productSpecCharacteristic        ProductSpecificationsProductSpecCharacteristic[]
+  productSpecificationRelationship ProductSpecificationsProductSpecificationRelationship[]
+  resourceSpecification            ProductSpecificationsResourceSpecification[]
+  serviceSpecification             ProductSpecificationsServiceSpecification[]
+  validFor                         ProductSpecificationsValidFor
+  version                          String
+}
+
+model users {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  password String
+  username String
+}

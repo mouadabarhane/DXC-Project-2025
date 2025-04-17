@@ -1,0 +1,33 @@
+.navbar__link {
+  text-decoration: none;
+}
+
+.navbar__link:hover {
+  color: white;
+}
+.Details {
+  width: 100%;
+}
+.navbar {
+  background-color: #8b2c8d;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+h3 {
+  font-weight: bold;
+  color: white;
+  margin-left: 10px;
+}
+
+/*close*/
+
+.close-button {
+  color: white;
+  display: inline;
+
+  float: right;
+}
+.Infos {
+  margin-left: 40px;
+  margin-right: 40px;
+}

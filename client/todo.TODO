@@ -1,0 +1,8 @@
+Todos:
+    [] Modifications
+        [+] Icons needs to be modified. (Login Icon color)
+        []  Oversized images under 400px (usual min mobile screen width is 320px)
+        [+] Landing background image sizing bug
+        [+] Descriptions of dropdowns need to be modified. 
+        [+] Removing Provider component
+        [+] NextAuth removed

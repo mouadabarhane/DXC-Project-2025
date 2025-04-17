@@ -1,0 +1,62 @@
+{
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "next"
+  ],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2023
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "react/no-unescaped-entities": 0,
+    "react-hooks/rules-of-hooks": 0,
+    "react/jsx-key": 0,
+    "react-hooks/exhaustive-deps": 0,
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "no-console": "off",
+    "no-undef": "off",
+    "no-unused-vars": "off",
+    "lines-around-directive": "off",
+    "prefer-template": "off",
+    "prefer-const": "off",
+    "no-underscore-dangle": "off",
+    "no-use-before-define": "off",
+    "spaced-comment": "off",
+    "prefer-destructuring": "off",
+    "no-unused-expressions": "off",
+    "radix": "off",
+    "no-else-return": "off",
+    "dot-notation": "off",
+    "global-require": "off",
+    "no-shadow": "off",
+    "consistent-return": "off",
+    "no-lone-blocks": "off",
+    "object-shorthand": "off",
+    "no-nested-ternary": "off",
+    "no-return-assign": "off",
+    "no-alert": "off",
+    "no-param-reassign": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-plusplus": "off",
+    "no-new": "off",
+    "import/no-relative-packages": "off",
+    "import/no-named-as-default": "off"
+  }
+}

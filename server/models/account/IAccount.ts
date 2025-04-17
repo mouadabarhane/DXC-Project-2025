@@ -1,0 +1,30 @@
+export default interface IAccountDocument extends Document {
+  id: string;
+  country: string;
+  notes: string | null;
+  stock_symbol: string | null;
+  number: string;
+  sys_updated_by: string;
+  sys_created_on: string;
+  contact: string | null;
+  stock_price: number | null;
+  state: string | null;
+  sys_created_by: string;
+  zip: string;
+  phone: string;
+  fax_phone: string | null;
+  name: string;
+  account_code: string;
+  primary: boolean;
+  city: string;
+  sys_class_name: string;
+  manufacturer: boolean;
+  street: string;
+  vendor: boolean;
+  theme: string | null;
+  vendor_type: string | null;
+  sn_ind_tsm_core_external_id: string | null;
+  website: string | null;
+  registration_code: string;
+  customer: boolean;
+}

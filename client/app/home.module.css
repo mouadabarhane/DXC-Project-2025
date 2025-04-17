@@ -1,0 +1,58 @@
+.home {
+  background-image: url("../public/assets/landing-bg.png");
+  height: 100vh;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.h1 {
+  font-size: 3rem;
+  font-weight: 550;
+  color: var(--slate-gray);
+  margin-bottom: 0.5rem;
+}
+
+.h2 {
+  font-size: 1.5rem;
+  font-weight: 550;
+  color: var(--primary-purple);
+  margin-bottom: 0.75rem;
+}
+
+.container {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button {
+  border-radius: 2.5rem;
+  display: inline;
+  width: 30%;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 550;
+  background: linear-gradient(
+    to right,
+    var(--primary-purple),
+    var(--secondary-purple)
+  );
+  padding: 0.25rem 0.5rem;
+  color: white;
+}
+
+.tag {
+  background: linear-gradient(
+    to right,
+    var(--primary-purple),
+    var(--secondary-purple)
+  );
+}
+
+.home-under-section {
+  background-color: #f0e5f1;
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Titillium+Web:wght@600&display=swap"); */

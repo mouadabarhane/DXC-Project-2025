@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-purple: #5f249f;
+  --secondary-purple: #8b2d8c;
+  --slate-gray: #606060;
+}
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+}
+
+.white-header-links {
+  color: white;
+}
+
+.bg-primary-purple {
+  background-color: var(--primary-purple);
+}
+
+.bg-secondary-purple {
+  background-color: var(--secondary-purple);
+}
+
+.bg-slate-gray {
+  background-color: var(--slate-gray);
+}
+
+.primary-purple {
+  color: var(--primary-purple);
+}
+
+.secondary-purple {
+  color: var(--secondary-purple);
+}
+
+.slate-gray {
+  color: var(--slate-gray);
+}
+
+.purple-header-links {
+  color: #5f249f;
+}
