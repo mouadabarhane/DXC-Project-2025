@@ -81,7 +81,7 @@ NEXT_PUBLIC_AXIOS_URL=
 
 ### Send a POST request to:
 ```sh
-http://localhost:{your-port}/api/users
+http://localhost:{your-port}/api/user
 ```
 
 ###  Sample JSON:
