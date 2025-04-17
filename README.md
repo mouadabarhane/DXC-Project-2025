@@ -19,6 +19,11 @@ Welcome to the **Order Management Tool (OMT)** developed as part of the **DXC PF
 * [![Node.js](https://img.shields.io/badge/Node.js-darkgreen?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 * [![TypeScript](https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 * [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-teal?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+* [![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+* [![Postman](https://img.shields.io/badge/Postman-orange?style=for-the-badge&logo=postman&logoColor=white)](https://www.postman.com/)
+* [![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)](https://jwt.io/)
+
+
 
 ---
 
